@@ -4,7 +4,7 @@ fn main() {
     // {:?} instead of {} for the placeholder. This is
     // an instruction to print a Debug version of the structure,
     // which will format the output in a debugging context.
-    println!("Arguments DBG: {:?}", std::env::args());
+    //println!("Arguments DBG: {:?}", std::env::args());
 
     let matches = App::new("echor")
         .version("0.1.0")
@@ -34,7 +34,7 @@ fn main() {
     // {:?} to format the debug view of the arguments.
     // {:#?} to include newlines and indentations to help
     //       me read the output. This is called pretty-printing
-    println!("{:#?}", matches);
+    // println!("{:#?}", matches);
 
     let text = matches.values_of_lossy("text").unwrap();
     // In Rust, if is an expression, not a statement as in Java/C.
